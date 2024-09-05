@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ryan Sexton Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" href="images/tab-icon.png">
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="images/close-icon.webp" class="small-screen-icon" onclick="closemenu()">
+                </ul>
+                <img src="images/menu-icon.png" class="small-screen-icon" onclick="openmenu()">
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Undergraduate</p>
+                <h1>Hi, I'm <span>Ryan Sexton</span><br>from Allentown, Pennsylvania.</h1>
+            </div>
+        </div>
+    </div>
+
+<!---------------About--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/prom.jpg" alt="profile picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I (right) am an undergraduate student at the
+                        University of Delaware, pursuing a Bachelor of Science degree in Computer Science,
+                        concentrating in Data. I am also pursuing a Minor in Statistical Data Analytics. 
+                        As you can see I also have an identical twin brother.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Bachelor of Science in Computer Science</span><br>University of Delaware 2021-2025</li>
+                            <li><span>Minor in Statistical Data Analytics</span><br>University of Delaware 2024-2025</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Coding Languages</span><br>Python &nbsp C &nbsp R &nbsp HTML &nbsp CSS</li>
+                            <li><span>Software</span><br>Power Bi &nbsp Microsoft Excel</li>
+                            <li><span>Databases</span><br>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Achievements</span><br>Filler</li>
+                            <li><span>Achievements</span><br>Filler</li>
+                            <li><span>Achievements</span><br>Filler</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <a href="personal-finance-tracker.html">
+            <div class="work">
+                <img src="images/personal-finance-icon.jpg">
+                <div class="layer">
+                    <h3>Personal Finance Tracker</h3>
+                    <p>This project uses Microsoft Excel and Power Bi to track my perosnal finances to help me save for my future</p>
+                    <img src="images/power-bi-icon.png"> <img src="images/excel-icon.png">
+                </div>
+            </div>
+            </a>
+            <a href="asteroids-game.html">
+            <div class="work">
+                <img src="images/asteroids-game.png">
+                <div class="layer">
+                    <h3>Asteroids Game</h3>
+                    <p>This game was made by me freshman year using python and shows the progress I've made over my time in college</p>
+                    <img src="images/python-icon.png">
+                </div>
+            </div>
+            </a>
+            <a href="portfolio-website.html">
+            <div class="work">
+                <img src="images/portfolio-website.png">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>Yes! I created this website from scratch using HTML and CSS</p>
+                    <img src="images/html-icon.png"> <img src="images/css-icon.png">
+                </div>
+            </div>
+        </a>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>rjsexton@udel.edu</p>
+                <p>484-866-2137</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ryanjsexton/" target="_blank"><img src="images/linkedin-icon.png" alt="Linkedin icon"></a>
+                    <a href="https://github.com/ryansexton" target="_blank"><img src="images/github-icon.png" alt="GitHub icon"></a>
+                </div>
+                <a href="Ryan Sexton Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+<!----
+            <div class="contact-right"> 
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>   
+            </div>
+        -->
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Ryan Sexton. Made with the hopes of getting a job</p>
+    </div>
+</div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    </body>
+</html>
