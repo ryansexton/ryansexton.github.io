@@ -255,6 +255,9 @@ color: #00a86b;
     background: #00a86b;
 }
 
+.btn.back{
+    display: inline-block;
+}
 /*---------------contact---------------*/
 
 .contact-left{
