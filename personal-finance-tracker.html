@@ -8,53 +8,56 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-    <div id="port_page_header">
-        <div class="container">
-            <nav>
-                <ul id="sidemenu">
-                    <li><a href="index.html#header">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <img src="close-icon.webp" class="small-screen-icon" onclick="closemenu()">
-                </ul>
-                <img src="menu-icon.png" class="small-screen-icon" onclick="openmenu()">
-            </nav>
-            <div>
-                <a href="javascript:window.history.back();" class="btn back">< Back</a>
+        <div id="port_page_header">
+            <div class="container">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="index.html#header">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <img src="images/close-icon.webp" class="small-screen-icon" onclick="closemenu()">
+                    </ul>
+                    <img src="images/menu-icon.png" class="small-screen-icon" onclick="openmenu()">
+                </nav>
+                <div>
+                    <a href="javascript:window.history.back();" class="btn back">< Back</a>
+                </div>
             </div>
         </div>
-    </div>
+<!-------------page content------------>
+        <div id="content">
+            <h1 class="content-title">Personal Finance Tracker</h1>
+        </div>
 
 <!---------------contact--------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p>rjsexton@udel.edu</p>
-                <p>484-866-2137</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/ryanjsexton/" target="_blank"><img src="images/linkedin-icon.png"></a>
-                    <a href="https://github.com/ryansexton" target="_blank"><img src="images/github-icon.png"></a>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>rjsexton@udel.edu</p>
+                        <p>484-866-2137</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/ryanjsexton/" target="_blank"><img src="images/linkedin-icon.png"></a>
+                            <a href="https://github.com/ryansexton" target="_blank"><img src="images/github-icon.png"></a>
+                        </div>
+                        <a href="Ryan Sexton Resume.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right"> 
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Feedback" rows="6" placeholder="Feedback or Suggestion"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>   
+                    </div>
                 </div>
-                <a href="Ryan Sexton Resume.pdf" download class="btn btn2">Download Resume</a>
-                
             </div>
-            <div class="contact-right"> 
-                <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Feedback" rows="6" placeholder="Feedback or Suggestion"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>   
+            <div class="copyright">
+                <p>Copyright &copy Ryan Sexton. Made with the hopes of getting a job</p>
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright &copy Ryan Sexton. Made with the hopes of getting a job</p>
-    </div>
-</div>
 
     <script>
 

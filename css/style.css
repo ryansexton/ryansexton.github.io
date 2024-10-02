@@ -341,6 +341,15 @@ form .btn2{
     font-size: 12px;
 }
 
+/*---------------page content---------------*/
+
+.content-title{
+    font-size: 50px;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 10%;
+}
+
 /*---------------css for small screen---------------*/
 
 nav .small-screen-icon{
@@ -412,6 +421,14 @@ nav .small-screen-icon{
 
     .contact-left, .contact-right{
         flex-basis: 100%;
+    }
+
+    .content{
+        width: 100%;
+        text-wrap: wrap;
+    }
+    .content-title{
+        font-size: 30px;
     }
 }
 
