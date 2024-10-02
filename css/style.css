@@ -367,9 +367,9 @@ form .btn2{
     margin: 10px;
     font-size: 20px;
     padding-left: 10%;
+    padding-right: 10%;
     line-height: 40px;
     display: block;
-
 }
 
 .content-text span{
@@ -377,9 +377,25 @@ form .btn2{
     font-size: 25px;
 }
 
-.content-text p{
-    float: right;
+.text-left{
+    flex-basis: 35%;
+    width: 100%;
+    font-size: 18px;
 }
+
+.text-left a{
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.text-right{
+    flex-basis: 60%;
+    width: 100%;
+    font-size: 18px;
+}
+
 /*---------------css for small screen---------------*/
 
 nav .small-screen-icon{

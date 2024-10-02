@@ -28,16 +28,33 @@
 <!-------------page content------------>
         <div id="content">
             <h1 class="content-title">Personal Finance Tracker</h1>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/gA6s8zGliwY">
-                </iframe>
-            </div>
+            <!---
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/gA6s8zGliwY">
+                    </iframe>
+                </div>
+            -->
             <div class="content-text">
-                <span>Skills Used:</span><br>Microsoft Excel<br>Power BI<span></span>
-                <p>In this personal project I used Microsoft Excel and Power BI to track my personal finances.</p>
+                <div class="row">
+                    <div class="text-left">
+                        <span>Skills Used:</span><br>Microsoft Excel<br>Power BI<br>
+                        <a href="finance-tracker-page/Personal Finance Database - Sample.xlsx" download class="btn btn2">Download Excel Spreadsheet</a><br>
+                        <a href="finance-tracker-page/Finance Tracker - Sample.pbix" download class="btn btn2">Download Power BI Dashboard</a>
+                    </div>
+                    <div class="text-right">
+                        <span>Description:</span><br>In this personal project I used Microsoft Excel and Power BI to track my personal finances. 
+                        For privacy the values used in the Excel sheet are just sample values.
+                        The dashboard uses an excel shreadsheet as it's data source.
+                        The excel sheet categorizes values as either income, expenses, or savings, along with sub-categories the further specify the monthly transactions.
+                        The dashboard displays many useful visualizations that help me track my income, spending and saving habits.
+                        Among these visualizations is my total net worth, monthly transaction trends, and a breakdown of spending and savings.
+                        I can use a slicer to specify the date range of finances I want to view whether that be a few months or all time.
+                        Currently I have to manually imput my finances into the excel sheet but I'm looking into programming the excel sheet to read in a CSV of my bank statements at the end of each month.
+                        Download the Excel file and Power BI dashboard for yourself to start tracking your finances!
+                    </div>
+                </div>
             </div>
         </div>
-
 <!---------------contact--------------->
         <div id="contact">
             <div class="container">
