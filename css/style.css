@@ -113,6 +113,7 @@ color: #00a86b;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .about-col-1{
