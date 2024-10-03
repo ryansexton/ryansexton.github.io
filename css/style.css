@@ -396,6 +396,15 @@ form .btn2{
     font-size: 18px;
 }
 
+.text-right img{
+    width: 50vh;
+}
+
+.content-text img{
+    width: 80vh;
+    margin-bottom: 50px;
+}
+
 /*---------------css for small screen---------------*/
 
 nav .small-screen-icon{
