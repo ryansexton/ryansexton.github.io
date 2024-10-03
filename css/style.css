@@ -271,6 +271,11 @@ color: #00a86b;
 .btn.back{
     display: inline-block;
 }
+
+.skill-icons img{
+    display: inline-block;
+    margin-top: 10px;
+}
 /*---------------contact---------------*/
 
 .contact-separator{
